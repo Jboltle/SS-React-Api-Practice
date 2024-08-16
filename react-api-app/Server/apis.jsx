@@ -8,16 +8,11 @@ export const apiData = async () => {
 
   const apiURL = `https://jsonplaceholder.typicode.com/photos`;
        
-       await fetch(apiURL)
-       .then(response => response.json())
-       .then(json => {
-      for (let i in json)
-         return(json)
+       const response = await fetch(apiURL)
+       const data = await response.json
+         return(data)
       }
-    )
-
-}
-
+  
 
 export const apiTitle = async () => {
 
