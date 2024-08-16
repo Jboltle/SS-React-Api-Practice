@@ -12,7 +12,7 @@ export const apiData = async () => {
        .then(response => response.json())
        .then(json => {
       for (let i in json)
-         console.log(json)
+         return(json)
       }
     )
 
